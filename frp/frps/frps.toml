@@ -1,0 +1,10 @@
+# 服务端 web 服务
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+webServer.user = "admin"
+webServer.password = "admin"
+
+# 服务端配置
+bindPort = 7000
+vhostHTTPSPort = 8090
+auth.token = "123456"

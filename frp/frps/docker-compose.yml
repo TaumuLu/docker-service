@@ -1,0 +1,9 @@
+services:
+  frpc:
+    image: snowdreamtech/frps
+    container_name: frps
+    volumes:
+      - ./frps.toml:/frps.toml  # 将本地的 frpc.toml 挂载到容器内
+    command: -c /frps.toml     # 指定配置文件路径
+    restart: always           # 自动重启容器
+    network_mode: host
