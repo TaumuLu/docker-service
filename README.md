@@ -12,7 +12,4 @@ my docker service
 
 - https://github.com/TaumuLu/ACL4SSR
 - https://github.com/stilleshan/dockerfiles
-- https://github.com/youshandefeiyang/sub-web-modify
-- https://github.com/MetaCubeX/mihomo
-- https://github.com/CareyWang/sub-web
 - https://github.com/NginxProxyManager/nginx-proxy-manager
