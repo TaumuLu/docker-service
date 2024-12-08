@@ -7,6 +7,7 @@ my docker service
 - https://ghp.ci/
 - https://imgki.com/archives/718.html
 - https://docs.halo.run/getting-started/install/other/nginxproxymanager/
+- https://1panel.cn/
 
 ## 相关项目
 
