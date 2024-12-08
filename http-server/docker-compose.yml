@@ -1,0 +1,9 @@
+services:
+  file-server:
+    image: webratio/nodejs-http-server
+    container_name: file-server
+    volumes:
+      - ./www:/opt/www
+    ports:
+      - "8081:8080"
+    restart: always
