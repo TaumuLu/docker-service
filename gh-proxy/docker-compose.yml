@@ -1,0 +1,8 @@
+version: "3.9" # 或其他支持的版本号
+services:
+  gh-proxy-py:
+    image: hunsh/gh-proxy-py:latest
+    container_name: gh-proxy-py
+    ports:
+      - "8089:80"
+    restart: always
