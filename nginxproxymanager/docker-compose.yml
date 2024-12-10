@@ -5,31 +5,31 @@ services:
     container_name: npm-app
     restart: always
     ports:
-      - '80:80'
+      # - '80:80'
       - '81:81' # http://127.0.0.1:81
       - '443:443'
-    environment:
-      DB_MYSQL_HOST: "npm-db"
-      DB_MYSQL_PORT: 3306
-      DB_MYSQL_USER: "npm"
-      DB_MYSQL_PASSWORD: "npm"
-      DB_MYSQL_NAME: "npm"
-      NODE_OPTIONS: ""
-    depends_on:
-      - npm-db
+    # environment:
+    #   DB_MYSQL_HOST: "npm-db"
+    #   DB_MYSQL_PORT: 3306
+    #   DB_MYSQL_USER: "npm"
+    #   DB_MYSQL_PASSWORD: "npm"
+    #   DB_MYSQL_NAME: "npm"
+    #   NODE_OPTIONS: ""
+    # depends_on:
+    #   - npm-db
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-  npm-db:
-    image: 'jc21/mariadb-aria:latest'
-    container_name: npm-db
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: 'npm'
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: 'npm'
-      MYSQL_PASSWORD: 'npm'
-      MARIADB_AUTO_UPGRADE: '1'
-    volumes:
-      #- ./data/mysql:/var/lib/mysql
-      - ./mysql:/var/lib/mysql
+  # npm-db:
+  #   image: 'jc21/mariadb-aria:latest'
+  #   container_name: npm-db
+  #   restart: unless-stopped
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 'npm'
+  #     MYSQL_DATABASE: 'npm'
+  #     MYSQL_USER: 'npm'
+  #     MYSQL_PASSWORD: 'npm'
+  #     MARIADB_AUTO_UPGRADE: '1'
+  #   volumes:
+  #     #- ./data/mysql:/var/lib/mysql
+  #     - ./mysql:/var/lib/mysql
