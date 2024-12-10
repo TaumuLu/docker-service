@@ -20,6 +20,8 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+      - ./code/ip_ranges.js:/app/internal/ip_ranges.js
+    # network_mode: host
   # npm-db:
   #   image: 'jc21/mariadb-aria:latest'
   #   container_name: npm-db
