@@ -1,0 +1,6 @@
+aria2/
+data/
+
+cloudreve/*
+!cloudreve.db
+!conf.ini
