@@ -1,0 +1,6 @@
+services:
+  pikachu-expect:
+    image: 8023/pikachu-expect:latest
+    ports:
+      - "8765:80"
+    restart: unless-stopped
