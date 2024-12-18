@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   v2ray:
-    image: v2ray/official
+    image: jrohy/v2ray
     container_name: v2ray
+    privileged: true
     volumes:
       - ./config.json:/etc/v2ray/config.json
     ports:
       - "8388:8388"
-    command: v2ray -config=/etc/v2ray/config.json
-    restart: unless-stopped
-
+    restart: always
+    network_mode: host
