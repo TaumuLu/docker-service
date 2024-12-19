@@ -1,0 +1,11 @@
+services:
+  v2ray:
+    image: jrohy/v2ray
+    container_name: v2ray
+    privileged: true
+    volumes:
+      - ./config.json:/etc/v2ray/config.json
+    ports:
+      - "8388:8388"
+    restart: always
+    network_mode: host
