@@ -4,10 +4,11 @@ services:
     image: chishin/nginx-proxy-manager-zh:release
     container_name: npm-app
     restart: always
-    ports:
-      - '80:80'
-      - '81:81' # http://127.0.0.1:81
-      - '443:443'
+    network_mode: host
+    # ports:
+    #   - '80:80'
+    #   - '81:81' # http://127.0.0.1:81
+    #   - '443:443'
     # environment:
     #   DB_MYSQL_HOST: "npm-db"
     #   DB_MYSQL_PORT: 3306
@@ -21,7 +22,6 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
       - ./code/ip_ranges.js:/app/internal/ip_ranges.js
-    # network_mode: host
   # npm-db:
   #   image: 'jc21/mariadb-aria:latest'
   #   container_name: npm-db
