@@ -5,3 +5,4 @@
 - https://github.com/MetaCubeX/mihomo
 - https://github.com/CareyWang/sub-web
 - https://imgki.com/archives/718.html
+- https://github.com/yorunning/clash-conf
