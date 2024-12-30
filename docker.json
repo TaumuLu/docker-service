@@ -1,0 +1,8 @@
+{
+  "registry-mirrors": [
+    "https://docker.unsee.tech",
+    "https://dockerpull.org",
+    "https://docker.1panel.live",
+    "https://dockerhub.icu"
+  ]
+}
