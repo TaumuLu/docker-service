@@ -1,0 +1,14 @@
+services:
+  dpanel:
+    image: dpanel/dpanel:lite
+    container_name: dpanel # 更改此名称后，请同步修改下方 APP_NAME 环境变量
+    restart: unless-stopped
+    ports:
+      - 8807:8080
+    environment:
+      - APP_NAME=dpanel
+      - INSTALL_USERNAME=admin
+      - INSTALL_PASSWORD=admin
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./home/dpanel:/dpanel # 将 /home/dpanel 更改为你想要挂载的宿主机目录
