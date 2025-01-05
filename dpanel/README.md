@@ -1,0 +1,2 @@
+- https://github.com/donknap/dpanel
+- https://dpanel.cc/#/
