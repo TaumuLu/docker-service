@@ -15,7 +15,6 @@ services:
     command: --storage-driver overlay2
     restart: always  # 可选，根据需要决定是否自动重启
   jenkins-blueocean:
-    container_name: jenkins-blueocean
     build:
       context: .  # 指定构建上下文，通常是包含 Dockerfile 的目录
       dockerfile: Dockerfile  # 如果 Dockerfile 文件名不为 Dockerfile，可以显式指定
