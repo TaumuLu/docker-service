@@ -3,9 +3,9 @@ services:
     image: snowdreamtech/frpc
     container_name: frpc
     volumes:
-      - ./frpc.toml:/frpc.toml  # 将本地的 frpc.toml 挂载到容器内
-    command: -c /frpc.toml     # 指定配置文件路径
-    restart: always           # 自动重启容器
+      - ./frpc.toml:/frpc.toml # 将本地的 frpc.toml 挂载到容器内
+    command: -c /frpc.toml # 指定配置文件路径
+    restart: always # 自动重启容器
     ports:
       - "7400:7400"
     # network_mode: host
