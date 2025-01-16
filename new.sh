@@ -15,6 +15,7 @@ mkdir -p "$FOLDER_NAME"
 # 在文件夹中创建空文件
 touch "$FOLDER_NAME/docker-compose.yml"
 touch "$FOLDER_NAME/README.md"
+touch "$FOLDER_NAME/.gitignore"
 
 # 输出成功信息
-echo "Folder '$FOLDER_NAME' created with docker-compose.yml and README.md"
+echo "Folder '$FOLDER_NAME' created with docker-compose.yml README.md .gitignore"
