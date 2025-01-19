@@ -1,0 +1,18 @@
+version: 0.1
+
+# HTTP 配置部分
+http:
+  addr: :5080 # 设置 Registry 服务监听的端口
+  headers:
+    X-Content-Type-Options: [nosniff]
+    Access-Control-Allow-Origin: ["*"]
+    Access-Control-Allow-Methods: ["HEAD", "GET", "OPTIONS", "DELETE"]
+    Access-Control-Allow-Headers: ["Authorization", "Accept", "Cache-Control"]
+    Access-Control-Expose-Headers: ["Docker-Content-Digest"]
+
+# 存储配置
+storage:
+  delete:
+    enabled: true # 启用镜像删除功能
+  filesystem:
+    rootdirectory: /var/lib/registry # 存储镜像的根目录
