@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf # 将自定义 nginx 配置文件挂载到容器
+      - ./html:/usr/share/nginx/html # 将静态资源目录挂载到容器

@@ -4,7 +4,7 @@ services:
       context: ./frontend # 前端项目目录
     container_name: frontend-app
     ports:
-      - "8081:80" # 将 Nginx 端口映射到主机的 80 端口
+      - "8080:80" # 将 Nginx 端口映射到主机的 80 端口
     depends_on:
       - backend # 确保后端服务在前端之前启动
 
