@@ -18,4 +18,9 @@ touch "$FOLDER_NAME/README.md"
 touch "$FOLDER_NAME/.gitignore"
 
 # 输出成功信息
-echo "Folder '$FOLDER_NAME' created with docker-compose.yml README.md .gitignore"
+# 输出成功信息
+echo -e "Created Folder $FOLDER_NAME"
+echo -e "Created files at:"
+echo -e "\033[32m$PWD/$FOLDER_NAME/docker-compose.yml\033[0m"
+echo -e "\033[32m$PWD/$FOLDER_NAME/README.md\033[0m"
+echo -e "\033[32m$PWD/$FOLDER_NAME/.gitignore\033[0m"
