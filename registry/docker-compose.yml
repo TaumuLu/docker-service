@@ -4,7 +4,7 @@ services:
     container_name: registry-server
     restart: always
     ports:
-      - "5080:5000"
+      - "5080:5080"
     volumes:
       - ./data:/var/lib/registry
       - ./config.yml:/etc/docker/registry/config.yml # 将配置文件挂载到容器内
