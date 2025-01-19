@@ -2,7 +2,7 @@ version: 0.1
 
 # HTTP 配置部分
 http:
-  addr: :5080 # 设置 Registry 服务监听的端口
+  addr: :5000 # 设置 Registry 服务监听的端口
   headers:
     X-Content-Type-Options: [nosniff]
     Access-Control-Allow-Origin: ["*"]

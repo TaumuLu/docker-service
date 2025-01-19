@@ -4,7 +4,7 @@ services:
     container_name: registry-server
     restart: always
     ports:
-      - "5080:5080"
+      - "5080:5000"
     volumes:
       - ./data:/var/lib/registry
       - ./config.yml:/etc/docker/registry/config.yml # 将配置文件挂载到容器内
@@ -21,7 +21,7 @@ services:
       - REGISTRY_TITLE=Docker Registry UI
       - DELETE_IMAGES=true
       - SHOW_CONTENT_DIGEST=true
-      - NGINX_PROXY_PASS_URL=http://registry-server:5080
+      - NGINX_PROXY_PASS_URL=http://registry-server:5000
       - SHOW_CATALOG_NB_TAGS=true
       - CATALOG_MIN_BRANCHES=1
       - CATALOG_MAX_BRANCHES=1
