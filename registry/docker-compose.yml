@@ -4,7 +4,7 @@ services:
     container_name: registry
     restart: always
     ports:
-      - "5000:5000"
+      - "5080:5000"
     volumes:
       - ./data:/var/lib/registry
     networks:
@@ -15,7 +15,7 @@ services:
     container_name: registry-ui
     restart: always
     ports:
-      - "5080:80"
+      - "5081:80"
     environment:
       - REGISTRY_URL=http://registry:5000
     depends_on:
