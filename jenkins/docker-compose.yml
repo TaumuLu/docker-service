@@ -1,41 +1,14 @@
 services:
-  jenkins-docker:
-    image: docker:dind
-    container_name: jenkins-docker
-    privileged: true
-    networks:
-      - jenkins
-    environment:
-      - DOCKER_TLS_CERTDIR=/certs
-    volumes:
-      - ./jenkins-docker-certs:/certs/client
-      - ./jenkins-data:/var/jenkins_home
-    ports:
-      - "2376:2376"
-    command: --storage-driver overlay2
-    restart: always  # 可选，根据需要决定是否自动重启
-  jenkins-blueocean:
-    build:
-      context: .  # 指定构建上下文，通常是包含 Dockerfile 的目录
-      dockerfile: Dockerfile  # 如果 Dockerfile 文件名不为 Dockerfile，可以显式指定
-    restart: on-failure
-    networks:
-      - jenkins
-    environment:
-      - DOCKER_HOST=tcp://docker:2376
-      - DOCKER_CERT_PATH=/certs/client
-      - DOCKER_TLS_VERIFY=1
-    ports:
-      - "8081:8080"
-      - "50000:50000"
-    volumes:
-      - ./jenkins-data:/var/jenkins_home
-      - ./jenkins-docker-certs:/certs/client:ro
-
-networks:
   jenkins:
-    external: true
-
-volumes:
-  jenkins-docker-certs:
-  jenkins-data:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    privileged: true # 让 Jenkins 容器具有足够的权限以运行 Docker 命令
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # 共享宿主机的 Docker 套接字
+      - ./jenkins-data:/var/jenkins_home # 持久化 Jenkins 数据
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock # 配置 Jenkins 使用宿主机的 Docker 守护进程
+    ports:
+      - "8070:8080"
+      - "50000:50000" # Jenkins agent 通信端口
+    restart: always
