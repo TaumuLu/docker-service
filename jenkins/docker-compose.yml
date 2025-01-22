@@ -13,11 +13,11 @@ services:
     ports:
       - "2376:2376"
     command: --storage-driver overlay2
-    restart: always  # 可选，根据需要决定是否自动重启
+    restart: always # 可选，根据需要决定是否自动重启
   jenkins-blueocean:
     build:
-      context: .  # 指定构建上下文，通常是包含 Dockerfile 的目录
-      dockerfile: Dockerfile  # 如果 Dockerfile 文件名不为 Dockerfile，可以显式指定
+      context: . # 指定构建上下文，通常是包含 Dockerfile 的目录
+      dockerfile: Dockerfile # 如果 Dockerfile 文件名不为 Dockerfile，可以显式指定
     restart: on-failure
     networks:
       - jenkins
@@ -26,7 +26,7 @@ services:
       - DOCKER_CERT_PATH=/certs/client
       - DOCKER_TLS_VERIFY=1
     ports:
-      - "8081:8080"
+      - "8070:8080"
       - "50000:50000"
     volumes:
       - ./jenkins-data:/var/jenkins_home
@@ -34,7 +34,7 @@ services:
 
 networks:
   jenkins:
-    external: true
+    external: false
 
 volumes:
   jenkins-docker-certs:
