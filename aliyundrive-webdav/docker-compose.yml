@@ -4,10 +4,10 @@ services:
     restart: unless-stopped
     image: messense/aliyundrive-webdav
     ports:
-      - '8081:8080'
+      - "8081:8080"
     environment:
       - REFRESH_TOKEN=80c8c8db79b3452b8000ec57f0b3c60d
       - WEBDAV_AUTH_USER=admin
       - WEBDAV_AUTH_PASSWORD=admin
     volumes:
-      - './etc/aliyundrive-webdav:/etc/aliyundrive-webdav/'
+      - "./etc/aliyundrive-webdav:/etc/aliyundrive-webdav/"

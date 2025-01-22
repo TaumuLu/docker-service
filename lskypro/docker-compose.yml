@@ -1,0 +1,9 @@
+services:
+  lskypro:
+    image: coldpig/lskypro-docker:latest
+    container_name: lskypro
+    restart: unless-stopped
+    ports:
+      - "5200:80"
+    volumes:
+      - ./data/lskypro:/var/www/html
