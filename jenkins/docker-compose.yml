@@ -9,6 +9,7 @@ services:
       - ./jenkins-data:/var/jenkins_home # 持久化 Jenkins 数据
     environment:
       - DOCKER_HOST=unix:///var/run/docker.sock # 配置 Jenkins 使用宿主机的 Docker 守护进程
+      - JAVA_OPTS=-Duser.timezone=Asia/Shanghai
     ports:
       - "8070:8080"
       - "50000:50000" # Jenkins agent 通信端口
