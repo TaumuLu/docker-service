@@ -1,0 +1,33 @@
+# 客户端 web 服务
+webServer.addr = "0.0.0.0"
+webServer.port = 7400
+webServer.user = "admin"
+webServer.password = "admin"
+
+# 客户端配置
+serverAddr = ""
+serverPort = 7000
+auth.method = "token"
+auth.token = ""
+
+# 客户端 web 服务暴漏端口
+[[proxies]]
+name = "admin"
+type = "tcp"
+localPort = 7400
+remotePort = 5000
+
+# ssh 代理
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "host.docker.internal"
+localPort = 22
+remotePort = 5001
+
+[[proxies]]
+name = "vnc"
+type = "tcp"
+localIP = "host.docker.internal"
+localPort = 5900
+remotePort = 5002
