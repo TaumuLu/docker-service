@@ -7,9 +7,10 @@ services=(
 
 # 显示使用方法
 show_usage() {
-  echo "用法: $0 [start|stop]"
-  echo "start: 启动所有服务（默认）"
-  echo "stop:  停止所有服务"
+  echo "用法: $0 [start|stop|restart]"
+  echo "  start:   启动所有服务（默认）"
+  echo "  stop:    停止所有服务"
+  echo "  restart: 重启所有服务"
   exit 1
 }
 
@@ -32,6 +33,14 @@ stop)
     docker-compose -f "$service/docker-compose.yml" down
   done
   echo "所有服务已停止！"
+  ;;
+restart)
+  # 遍历重启每个服务
+  for service in "${services[@]}"; do
+    echo "正在重启服务: $service..."
+    docker-compose -f "$service/docker-compose.yml" restart
+  done
+  echo "所有服务已重启！"
   ;;
 *)
   show_usage
