@@ -10,17 +10,20 @@ fi
 FOLDER_NAME="$1"
 
 # 创建文件夹
-mkdir -p "$FOLDER_NAME"
+if [ -d "$FOLDER_NAME" ]; then
+  echo "文件夹 $FOLDER_NAME 已存在"
+else
+  mkdir -p "$FOLDER_NAME"
+  echo "已创建文件夹 $FOLDER_NAME"
 
-# 在文件夹中创建空文件
-touch "$FOLDER_NAME/docker-compose.yml"
-touch "$FOLDER_NAME/README.md"
-touch "$FOLDER_NAME/.gitignore"
+  # 在文件夹中创建空文件
+  touch "$FOLDER_NAME/docker-compose.yml"
+  touch "$FOLDER_NAME/README.md"
+  touch "$FOLDER_NAME/.gitignore"
 
-# 输出成功信息
-# 输出成功信息
-echo -e "Created Folder $FOLDER_NAME"
-echo -e "Created files at:"
-echo -e "\033[32m$PWD/$FOLDER_NAME/docker-compose.yml\033[0m"
-echo -e "\033[32m$PWD/$FOLDER_NAME/README.md\033[0m"
-echo -e "\033[32m$PWD/$FOLDER_NAME/.gitignore\033[0m"
+  # 输出成功信息
+  echo -e "创建文件:"
+  echo -e "\033[32m$PWD/$FOLDER_NAME/docker-compose.yml\033[0m"
+  echo -e "\033[32m$PWD/$FOLDER_NAME/README.md\033[0m"
+  echo -e "\033[32m$PWD/$FOLDER_NAME/.gitignore\033[0m"
+fi
