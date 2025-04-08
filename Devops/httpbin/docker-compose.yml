@@ -1,0 +1,7 @@
+services:
+  httpbin:
+    image: kennethreitz/httpbin
+    container_name: httpbin
+    ports:
+      - "8033:80"
+    restart: unless-stopped
