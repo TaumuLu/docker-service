@@ -12,12 +12,12 @@ services:
       - "8090:8090"
     links:
       - apollo-db
-    #environment:
-    #JAVA_OPTS: '-Xms100m -Xmx1000m -Xmn100m -Xss256k -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=250m'
-    #APOLLO_CONFIG_DB_USERNAME: 'root'
-    #APOLLO_CONFIG_DB_PASSWORD: 'apollo'
-    #APOLLO_PORTAL_DB_USERNAME: 'root'
-    #APOLLO_PORTAL_DB_PASSWORD: 'apollo'
+    environment:
+      #JAVA_OPTS: '-Xms100m -Xmx1000m -Xmn100m -Xss256k -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=250m'
+      APOLLO_CONFIG_DB_USERNAME: "root"
+      APOLLO_CONFIG_DB_PASSWORD: "apollo-zm"
+      APOLLO_PORTAL_DB_USERNAME: "root"
+      APOLLO_PORTAL_DB_PASSWORD: "apollo"
 
   apollo-db:
     platform: linux/arm64
@@ -26,7 +26,7 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      #MYSQL_ROOT_PASSWORD: 'apollo'
+      MYSQL_ROOT_PASSWORD: "apollo-zm"
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 5s
@@ -46,4 +46,4 @@ services:
     image: alpine:latest
     container_name: apollo-dbdata
     volumes:
-      - /var/lib/mysql
+      - /var/lib/apollo-mysql
