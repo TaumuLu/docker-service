@@ -1,0 +1,13 @@
+services:
+  dockge:
+    image: louislam/dockge:latest
+    container_name: dockge
+    ports:
+      - "5001:5001" # 可修改为你想要的端口
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/app/data # 用于存储 Dockge 的设置
+      - ./projects:/app/projects # 你放置其他 compose 项目的目录
+    restart: always
+    environment:
+      - DOCKGE_PROJECTS_DIR=/app/projects # 指定项目目录
