@@ -1,0 +1,24 @@
+services:
+  hoppscotch:
+    image: hoppscotch/hoppscotch:latest
+    ports:
+      - "3000:3000"
+      - "3100:3100"
+      - "3170:3170"
+    env_file:
+      - .env
+    restart: unless-stopped
+  postgres:
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: hoppscotchpass
+      POSTGRES_DB: hoppscotch
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
