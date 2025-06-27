@@ -1,0 +1,2059 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+  - {
+      name: Game 台湾 | 遊戲專用 | 倍率:20,
+      server: d3.alibabamysql.com,
+      port: 6403,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Game 日本 | 遊戲專用 | 倍率:20,
+      server: d3.alibabamysql.com,
+      port: 6401,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Game 香港 | 遊戲專用 | 倍率:20,
+      server: d3.alibabamysql.com,
+      port: 6402,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾01,
+      server: d2.alibabamysql.com,
+      port: 6501,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾02,
+      server: d2.alibabamysql.com,
+      port: 6502,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾03,
+      server: d2.alibabamysql.com,
+      port: 6503,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾04,
+      server: d2.alibabamysql.com,
+      port: 699,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾05,
+      server: d2.alibabamysql.com,
+      port: 700,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 台湾06,
+      server: d2.alibabamysql.com,
+      port: 6506,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 德国01 | 倍率:1.3,
+      server: d2.alibabamysql.com,
+      port: 6113,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡01 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 3201,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡02 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 3202,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡03,
+      server: d2.alibabamysql.com,
+      port: 3203,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡04 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 3204,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡05 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 3205,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡06 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 3206,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡07 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 3207,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡08 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 1004,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡09 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 3209,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 新加坡10 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 3210,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 日本01 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 6301,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 日本02 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 6302,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 日本03 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 6303,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 日本04 | 倍率:1.3,
+      server: d2.alibabamysql.com,
+      port: 6304,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 日本05 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 6305,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 澳洲01 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6110,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 澳洲02 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6111,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国01 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 1098,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国02 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 6202,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国03 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6203,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国04 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 6204,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国05 | 倍率:1.5,
+      server: d2.alibabamysql.com,
+      port: 6205,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 美国06 | 倍率:1.7,
+      server: d2.alibabamysql.com,
+      port: 6206,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 英国01 | 倍率:1.2,
+      server: d2.alibabamysql.com,
+      port: 6114,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 韩国01 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6101,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 韩国02 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6102,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港01 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 6001,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港02 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 6002,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港03 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 6003,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港04 | 倍率:1.9,
+      server: d2.alibabamysql.com,
+      port: 6004,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港05 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 6005,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港06 | 倍率:2,
+      server: d2.alibabamysql.com,
+      port: 6006,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港07 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 6007,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港08 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6008,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港09 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6009,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港10 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6010,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港11 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6011,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港12 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6012,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港13 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6013,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港14 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6014,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港15 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6015,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港16 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6016,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港17 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 6017,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港18 | 倍率:1.8,
+      server: d2.alibabamysql.com,
+      port: 6018,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港19 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6019,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港20 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6020,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Large 香港21 | 倍率:1.6,
+      server: d2.alibabamysql.com,
+      port: 6021,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 俄罗斯01 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2807,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 加拿大01 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2806,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 印度01 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2701,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 印度02 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2702,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾01 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 1111,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾02 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 1112,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾03 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 1113,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾04 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 1114,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾05 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 1115,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 台湾06 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 1116,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 德国01,
+      server: d1.alibabamysql.com,
+      port: 2810,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 新加坡01 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2201,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 新加坡02 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2202,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 新加坡03 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2203,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 新加坡04 | 倍率:2,
+      server: d1.alibabamysql.com,
+      port: 2204,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 新加坡05 | 倍率:2,
+      server: d1.alibabamysql.com,
+      port: 2205,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本01 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2601,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本02 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2602,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本03 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2603,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本04 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2604,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本05 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 2605,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 日本06 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 2606,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国01 | 倍率:2.1,
+      server: d1.alibabamysql.com,
+      port: 1150,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国02 | 倍率:1.9,
+      server: d1.alibabamysql.com,
+      port: 1151,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国03 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 1152,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国04 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1153,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国05 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1154,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国06 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1155,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国07 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1156,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国08 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1157,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国09 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1158,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 美国10 | 倍率:1.3,
+      server: d1.alibabamysql.com,
+      port: 1159,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 英国01 | 倍率:1,
+      server: d1.alibabamysql.com,
+      port: 1601,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 英国02 | 倍率:1,
+      server: d1.alibabamysql.com,
+      port: 1602,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 韩国01 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2301,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 韩国02 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 2302,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 韩国03 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 2303,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 韩国04 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 2506,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 韩国05 | 倍率:1.2,
+      server: d1.alibabamysql.com,
+      port: 2507,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港01 | 倍率:1.8,
+      server: d1.alibabamysql.com,
+      port: 2101,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港02 | 倍率:1.8,
+      server: d1.alibabamysql.com,
+      port: 2102,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港03 | 倍率:1.6,
+      server: d1.alibabamysql.com,
+      port: 2103,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港04 | 倍率:1.6,
+      server: d1.alibabamysql.com,
+      port: 2104,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港05 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2105,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港06 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2106,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港07 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2107,
+      type: ssr,
+      cipher: aes-256-cfb,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港08 | 倍率:1.5,
+      server: d1.alibabamysql.com,
+      port: 2108,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港09 | 倍率:1.6,
+      server: d1.alibabamysql.com,
+      port: 2109,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港10 | 倍率:1.6,
+      server: d1.alibabamysql.com,
+      port: 2110,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港11 | 倍率:2,
+      server: d1.alibabamysql.com,
+      port: 2111,
+      type: ssr,
+      cipher: rc4-md5,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: tls1.2_ticket_auth,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+  - {
+      name: Lil 香港12,
+      server: d1.alibabamysql.com,
+      port: 2112,
+      type: ssr,
+      cipher: chacha20-ietf,
+      password: di15PV,
+      protocol: auth_aes128_md5,
+      obfs: plain,
+      protocol-param: 157822:GwVyy9,
+      obfs-param: 5924c157822.www.gov.hk,
+    }
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🛠️ 手动切换
+      - 🇭🇰 香港节点
+      - 🇸🇬 新加坡节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - DIRECT
+  - name: 🛠️ 手动切换
+    type: select
+    proxies:
+      - Game 台湾 | 遊戲專用 | 倍率:20
+      - Game 日本 | 遊戲專用 | 倍率:20
+      - Game 香港 | 遊戲專用 | 倍率:20
+      - Large 台湾01
+      - Large 台湾02
+      - Large 台湾03
+      - Large 台湾04
+      - Large 台湾05
+      - Large 台湾06
+      - Large 德国01 | 倍率:1.3
+      - Large 新加坡01 | 倍率:1.8
+      - Large 新加坡02 | 倍率:1.8
+      - Large 新加坡03
+      - Large 新加坡04 | 倍率:1.6
+      - Large 新加坡05 | 倍率:1.5
+      - Large 新加坡06 | 倍率:1.5
+      - Large 新加坡07 | 倍率:1.5
+      - Large 新加坡08 | 倍率:1.5
+      - Large 新加坡09 | 倍率:1.5
+      - Large 新加坡10 | 倍率:1.5
+      - Large 日本01 | 倍率:1.5
+      - Large 日本02 | 倍率:1.5
+      - Large 日本03 | 倍率:1.5
+      - Large 日本04 | 倍率:1.3
+      - Large 日本05 | 倍率:2
+      - Large 澳洲01 | 倍率:1.6
+      - Large 澳洲02 | 倍率:1.6
+      - Large 美国01 | 倍率:2
+      - Large 美国02 | 倍率:1.8
+      - Large 美国03 | 倍率:1.6
+      - Large 美国04 | 倍率:1.5
+      - Large 美国05 | 倍率:1.5
+      - Large 美国06 | 倍率:1.7
+      - Large 英国01 | 倍率:1.2
+      - Large 韩国01 | 倍率:1.6
+      - Large 韩国02 | 倍率:1.6
+      - Large 香港01 | 倍率:2
+      - Large 香港02 | 倍率:2
+      - Large 香港03 | 倍率:2
+      - Large 香港04 | 倍率:1.9
+      - Large 香港05 | 倍率:1.8
+      - Large 香港06 | 倍率:2
+      - Large 香港07 | 倍率:1.8
+      - Large 香港08 | 倍率:1.6
+      - Large 香港09 | 倍率:1.6
+      - Large 香港10 | 倍率:1.6
+      - Large 香港11 | 倍率:1.6
+      - Large 香港12 | 倍率:1.6
+      - Large 香港13 | 倍率:1.6
+      - Large 香港14 | 倍率:1.6
+      - Large 香港15 | 倍率:1.6
+      - Large 香港16 | 倍率:1.6
+      - Large 香港17 | 倍率:1.8
+      - Large 香港18 | 倍率:1.8
+      - Large 香港19 | 倍率:1.6
+      - Large 香港20 | 倍率:1.6
+      - Large 香港21 | 倍率:1.6
+      - Lil 俄罗斯01 | 倍率:1.3
+      - Lil 加拿大01 | 倍率:1.3
+      - Lil 印度01 | 倍率:1.3
+      - Lil 印度02 | 倍率:1.3
+      - Lil 台湾01 | 倍率:1.5
+      - Lil 台湾02 | 倍率:1.2
+      - Lil 台湾03 | 倍率:1.2
+      - Lil 台湾04 | 倍率:1.2
+      - Lil 台湾05 | 倍率:1.2
+      - Lil 台湾06 | 倍率:1.2
+      - Lil 德国01
+      - Lil 新加坡01 | 倍率:1.5
+      - Lil 新加坡02 | 倍率:1.5
+      - Lil 新加坡03 | 倍率:1.5
+      - Lil 新加坡04 | 倍率:2
+      - Lil 新加坡05 | 倍率:2
+      - Lil 日本01 | 倍率:1.5
+      - Lil 日本02 | 倍率:1.3
+      - Lil 日本03 | 倍率:1.3
+      - Lil 日本04 | 倍率:1.3
+      - Lil 日本05 | 倍率:1.3
+      - Lil 日本06 | 倍率:1.2
+      - Lil 美国01 | 倍率:2.1
+      - Lil 美国02 | 倍率:1.9
+      - Lil 美国03 | 倍率:1.5
+      - Lil 美国04 | 倍率:1.3
+      - Lil 美国05 | 倍率:1.3
+      - Lil 美国06 | 倍率:1.3
+      - Lil 美国07 | 倍率:1.3
+      - Lil 美国08 | 倍率:1.3
+      - Lil 美国09 | 倍率:1.3
+      - Lil 美国10 | 倍率:1.3
+      - Lil 英国01 | 倍率:1
+      - Lil 英国02 | 倍率:1
+      - Lil 韩国01 | 倍率:1.5
+      - Lil 韩国02 | 倍率:1.2
+      - Lil 韩国03 | 倍率:1.2
+      - Lil 韩国04 | 倍率:1.2
+      - Lil 韩国05 | 倍率:1.2
+      - Lil 香港01 | 倍率:1.8
+      - Lil 香港02 | 倍率:1.8
+      - Lil 香港03 | 倍率:1.6
+      - Lil 香港04 | 倍率:1.6
+      - Lil 香港05 | 倍率:1.5
+      - Lil 香港06 | 倍率:1.5
+      - Lil 香港07 | 倍率:1.5
+      - Lil 香港08 | 倍率:1.5
+      - Lil 香港09 | 倍率:1.6
+      - Lil 香港10 | 倍率:1.6
+      - Lil 香港11 | 倍率:2
+      - Lil 香港12
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 台湾 | 遊戲專用 | 倍率:20
+      - Game 日本 | 遊戲專用 | 倍率:20
+      - Game 香港 | 遊戲專用 | 倍率:20
+      - Large 台湾01
+      - Large 台湾02
+      - Large 台湾03
+      - Large 台湾04
+      - Large 台湾05
+      - Large 台湾06
+      - Large 德国01 | 倍率:1.3
+      - Large 新加坡01 | 倍率:1.8
+      - Large 新加坡02 | 倍率:1.8
+      - Large 新加坡03
+      - Large 新加坡04 | 倍率:1.6
+      - Large 新加坡05 | 倍率:1.5
+      - Large 新加坡06 | 倍率:1.5
+      - Large 新加坡07 | 倍率:1.5
+      - Large 新加坡08 | 倍率:1.5
+      - Large 新加坡09 | 倍率:1.5
+      - Large 新加坡10 | 倍率:1.5
+      - Large 日本01 | 倍率:1.5
+      - Large 日本02 | 倍率:1.5
+      - Large 日本03 | 倍率:1.5
+      - Large 日本04 | 倍率:1.3
+      - Large 日本05 | 倍率:2
+      - Large 澳洲01 | 倍率:1.6
+      - Large 澳洲02 | 倍率:1.6
+      - Large 美国01 | 倍率:2
+      - Large 美国02 | 倍率:1.8
+      - Large 美国03 | 倍率:1.6
+      - Large 美国04 | 倍率:1.5
+      - Large 美国05 | 倍率:1.5
+      - Large 美国06 | 倍率:1.7
+      - Large 英国01 | 倍率:1.2
+      - Large 韩国01 | 倍率:1.6
+      - Large 韩国02 | 倍率:1.6
+      - Large 香港01 | 倍率:2
+      - Large 香港02 | 倍率:2
+      - Large 香港03 | 倍率:2
+      - Large 香港04 | 倍率:1.9
+      - Large 香港05 | 倍率:1.8
+      - Large 香港06 | 倍率:2
+      - Large 香港07 | 倍率:1.8
+      - Large 香港08 | 倍率:1.6
+      - Large 香港09 | 倍率:1.6
+      - Large 香港10 | 倍率:1.6
+      - Large 香港11 | 倍率:1.6
+      - Large 香港12 | 倍率:1.6
+      - Large 香港13 | 倍率:1.6
+      - Large 香港14 | 倍率:1.6
+      - Large 香港15 | 倍率:1.6
+      - Large 香港16 | 倍率:1.6
+      - Large 香港17 | 倍率:1.8
+      - Large 香港18 | 倍率:1.8
+      - Large 香港19 | 倍率:1.6
+      - Large 香港20 | 倍率:1.6
+      - Large 香港21 | 倍率:1.6
+      - Lil 俄罗斯01 | 倍率:1.3
+      - Lil 加拿大01 | 倍率:1.3
+      - Lil 印度01 | 倍率:1.3
+      - Lil 印度02 | 倍率:1.3
+      - Lil 台湾01 | 倍率:1.5
+      - Lil 台湾02 | 倍率:1.2
+      - Lil 台湾03 | 倍率:1.2
+      - Lil 台湾04 | 倍率:1.2
+      - Lil 台湾05 | 倍率:1.2
+      - Lil 台湾06 | 倍率:1.2
+      - Lil 德国01
+      - Lil 新加坡01 | 倍率:1.5
+      - Lil 新加坡02 | 倍率:1.5
+      - Lil 新加坡03 | 倍率:1.5
+      - Lil 新加坡04 | 倍率:2
+      - Lil 新加坡05 | 倍率:2
+      - Lil 日本01 | 倍率:1.5
+      - Lil 日本02 | 倍率:1.3
+      - Lil 日本03 | 倍率:1.3
+      - Lil 日本04 | 倍率:1.3
+      - Lil 日本05 | 倍率:1.3
+      - Lil 日本06 | 倍率:1.2
+      - Lil 美国01 | 倍率:2.1
+      - Lil 美国02 | 倍率:1.9
+      - Lil 美国03 | 倍率:1.5
+      - Lil 美国04 | 倍率:1.3
+      - Lil 美国05 | 倍率:1.3
+      - Lil 美国06 | 倍率:1.3
+      - Lil 美国07 | 倍率:1.3
+      - Lil 美国08 | 倍率:1.3
+      - Lil 美国09 | 倍率:1.3
+      - Lil 美国10 | 倍率:1.3
+      - Lil 英国01 | 倍率:1
+      - Lil 英国02 | 倍率:1
+      - Lil 韩国01 | 倍率:1.5
+      - Lil 韩国02 | 倍率:1.2
+      - Lil 韩国03 | 倍率:1.2
+      - Lil 韩国04 | 倍率:1.2
+      - Lil 韩国05 | 倍率:1.2
+      - Lil 香港01 | 倍率:1.8
+      - Lil 香港02 | 倍率:1.8
+      - Lil 香港03 | 倍率:1.6
+      - Lil 香港04 | 倍率:1.6
+      - Lil 香港05 | 倍率:1.5
+      - Lil 香港06 | 倍率:1.5
+      - Lil 香港07 | 倍率:1.5
+      - Lil 香港08 | 倍率:1.5
+      - Lil 香港09 | 倍率:1.6
+      - Lil 香港10 | 倍率:1.6
+      - Lil 香港11 | 倍率:2
+      - Lil 香港12
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 台湾 | 遊戲專用 | 倍率:20
+      - Game 日本 | 遊戲專用 | 倍率:20
+      - Game 香港 | 遊戲專用 | 倍率:20
+      - Large 台湾01
+      - Large 台湾02
+      - Large 台湾03
+      - Large 台湾04
+      - Large 台湾05
+      - Large 台湾06
+      - Large 德国01 | 倍率:1.3
+      - Large 新加坡01 | 倍率:1.8
+      - Large 新加坡02 | 倍率:1.8
+      - Large 新加坡03
+      - Large 新加坡04 | 倍率:1.6
+      - Large 新加坡05 | 倍率:1.5
+      - Large 新加坡06 | 倍率:1.5
+      - Large 新加坡07 | 倍率:1.5
+      - Large 新加坡08 | 倍率:1.5
+      - Large 新加坡09 | 倍率:1.5
+      - Large 新加坡10 | 倍率:1.5
+      - Large 日本01 | 倍率:1.5
+      - Large 日本02 | 倍率:1.5
+      - Large 日本03 | 倍率:1.5
+      - Large 日本04 | 倍率:1.3
+      - Large 日本05 | 倍率:2
+      - Large 澳洲01 | 倍率:1.6
+      - Large 澳洲02 | 倍率:1.6
+      - Large 美国01 | 倍率:2
+      - Large 美国02 | 倍率:1.8
+      - Large 美国03 | 倍率:1.6
+      - Large 美国04 | 倍率:1.5
+      - Large 美国05 | 倍率:1.5
+      - Large 美国06 | 倍率:1.7
+      - Large 英国01 | 倍率:1.2
+      - Large 韩国01 | 倍率:1.6
+      - Large 韩国02 | 倍率:1.6
+      - Large 香港01 | 倍率:2
+      - Large 香港02 | 倍率:2
+      - Large 香港03 | 倍率:2
+      - Large 香港04 | 倍率:1.9
+      - Large 香港05 | 倍率:1.8
+      - Large 香港06 | 倍率:2
+      - Large 香港07 | 倍率:1.8
+      - Large 香港08 | 倍率:1.6
+      - Large 香港09 | 倍率:1.6
+      - Large 香港10 | 倍率:1.6
+      - Large 香港11 | 倍率:1.6
+      - Large 香港12 | 倍率:1.6
+      - Large 香港13 | 倍率:1.6
+      - Large 香港14 | 倍率:1.6
+      - Large 香港15 | 倍率:1.6
+      - Large 香港16 | 倍率:1.6
+      - Large 香港17 | 倍率:1.8
+      - Large 香港18 | 倍率:1.8
+      - Large 香港19 | 倍率:1.6
+      - Large 香港20 | 倍率:1.6
+      - Large 香港21 | 倍率:1.6
+      - Lil 俄罗斯01 | 倍率:1.3
+      - Lil 加拿大01 | 倍率:1.3
+      - Lil 印度01 | 倍率:1.3
+      - Lil 印度02 | 倍率:1.3
+      - Lil 台湾01 | 倍率:1.5
+      - Lil 台湾02 | 倍率:1.2
+      - Lil 台湾03 | 倍率:1.2
+      - Lil 台湾04 | 倍率:1.2
+      - Lil 台湾05 | 倍率:1.2
+      - Lil 台湾06 | 倍率:1.2
+      - Lil 德国01
+      - Lil 新加坡01 | 倍率:1.5
+      - Lil 新加坡02 | 倍率:1.5
+      - Lil 新加坡03 | 倍率:1.5
+      - Lil 新加坡04 | 倍率:2
+      - Lil 新加坡05 | 倍率:2
+      - Lil 日本01 | 倍率:1.5
+      - Lil 日本02 | 倍率:1.3
+      - Lil 日本03 | 倍率:1.3
+      - Lil 日本04 | 倍率:1.3
+      - Lil 日本05 | 倍率:1.3
+      - Lil 日本06 | 倍率:1.2
+      - Lil 美国01 | 倍率:2.1
+      - Lil 美国02 | 倍率:1.9
+      - Lil 美国03 | 倍率:1.5
+      - Lil 美国04 | 倍率:1.3
+      - Lil 美国05 | 倍率:1.3
+      - Lil 美国06 | 倍率:1.3
+      - Lil 美国07 | 倍率:1.3
+      - Lil 美国08 | 倍率:1.3
+      - Lil 美国09 | 倍率:1.3
+      - Lil 美国10 | 倍率:1.3
+      - Lil 英国01 | 倍率:1
+      - Lil 英国02 | 倍率:1
+      - Lil 韩国01 | 倍率:1.5
+      - Lil 韩国02 | 倍率:1.2
+      - Lil 韩国03 | 倍率:1.2
+      - Lil 韩国04 | 倍率:1.2
+      - Lil 韩国05 | 倍率:1.2
+      - Lil 香港01 | 倍率:1.8
+      - Lil 香港02 | 倍率:1.8
+      - Lil 香港03 | 倍率:1.6
+      - Lil 香港04 | 倍率:1.6
+      - Lil 香港05 | 倍率:1.5
+      - Lil 香港06 | 倍率:1.5
+      - Lil 香港07 | 倍率:1.5
+      - Lil 香港08 | 倍率:1.5
+      - Lil 香港09 | 倍率:1.6
+      - Lil 香港10 | 倍率:1.6
+      - Lil 香港11 | 倍率:2
+      - Lil 香港12
+  - name: 🔮 负载均衡
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 台湾 | 遊戲專用 | 倍率:20
+      - Game 日本 | 遊戲專用 | 倍率:20
+      - Game 香港 | 遊戲專用 | 倍率:20
+      - Large 台湾01
+      - Large 台湾02
+      - Large 台湾03
+      - Large 台湾04
+      - Large 台湾05
+      - Large 台湾06
+      - Large 德国01 | 倍率:1.3
+      - Large 新加坡01 | 倍率:1.8
+      - Large 新加坡02 | 倍率:1.8
+      - Large 新加坡03
+      - Large 新加坡04 | 倍率:1.6
+      - Large 新加坡05 | 倍率:1.5
+      - Large 新加坡06 | 倍率:1.5
+      - Large 新加坡07 | 倍率:1.5
+      - Large 新加坡08 | 倍率:1.5
+      - Large 新加坡09 | 倍率:1.5
+      - Large 新加坡10 | 倍率:1.5
+      - Large 日本01 | 倍率:1.5
+      - Large 日本02 | 倍率:1.5
+      - Large 日本03 | 倍率:1.5
+      - Large 日本04 | 倍率:1.3
+      - Large 日本05 | 倍率:2
+      - Large 澳洲01 | 倍率:1.6
+      - Large 澳洲02 | 倍率:1.6
+      - Large 美国01 | 倍率:2
+      - Large 美国02 | 倍率:1.8
+      - Large 美国03 | 倍率:1.6
+      - Large 美国04 | 倍率:1.5
+      - Large 美国05 | 倍率:1.5
+      - Large 美国06 | 倍率:1.7
+      - Large 英国01 | 倍率:1.2
+      - Large 韩国01 | 倍率:1.6
+      - Large 韩国02 | 倍率:1.6
+      - Large 香港01 | 倍率:2
+      - Large 香港02 | 倍率:2
+      - Large 香港03 | 倍率:2
+      - Large 香港04 | 倍率:1.9
+      - Large 香港05 | 倍率:1.8
+      - Large 香港06 | 倍率:2
+      - Large 香港07 | 倍率:1.8
+      - Large 香港08 | 倍率:1.6
+      - Large 香港09 | 倍率:1.6
+      - Large 香港10 | 倍率:1.6
+      - Large 香港11 | 倍率:1.6
+      - Large 香港12 | 倍率:1.6
+      - Large 香港13 | 倍率:1.6
+      - Large 香港14 | 倍率:1.6
+      - Large 香港15 | 倍率:1.6
+      - Large 香港16 | 倍率:1.6
+      - Large 香港17 | 倍率:1.8
+      - Large 香港18 | 倍率:1.8
+      - Large 香港19 | 倍率:1.6
+      - Large 香港20 | 倍率:1.6
+      - Large 香港21 | 倍率:1.6
+      - Lil 俄罗斯01 | 倍率:1.3
+      - Lil 加拿大01 | 倍率:1.3
+      - Lil 印度01 | 倍率:1.3
+      - Lil 印度02 | 倍率:1.3
+      - Lil 台湾01 | 倍率:1.5
+      - Lil 台湾02 | 倍率:1.2
+      - Lil 台湾03 | 倍率:1.2
+      - Lil 台湾04 | 倍率:1.2
+      - Lil 台湾05 | 倍率:1.2
+      - Lil 台湾06 | 倍率:1.2
+      - Lil 德国01
+      - Lil 新加坡01 | 倍率:1.5
+      - Lil 新加坡02 | 倍率:1.5
+      - Lil 新加坡03 | 倍率:1.5
+      - Lil 新加坡04 | 倍率:2
+      - Lil 新加坡05 | 倍率:2
+      - Lil 日本01 | 倍率:1.5
+      - Lil 日本02 | 倍率:1.3
+      - Lil 日本03 | 倍率:1.3
+      - Lil 日本04 | 倍率:1.3
+      - Lil 日本05 | 倍率:1.3
+      - Lil 日本06 | 倍率:1.2
+      - Lil 美国01 | 倍率:2.1
+      - Lil 美国02 | 倍率:1.9
+      - Lil 美国03 | 倍率:1.5
+      - Lil 美国04 | 倍率:1.3
+      - Lil 美国05 | 倍率:1.3
+      - Lil 美国06 | 倍率:1.3
+      - Lil 美国07 | 倍率:1.3
+      - Lil 美国08 | 倍率:1.3
+      - Lil 美国09 | 倍率:1.3
+      - Lil 美国10 | 倍率:1.3
+      - Lil 英国01 | 倍率:1
+      - Lil 英国02 | 倍率:1
+      - Lil 韩国01 | 倍率:1.5
+      - Lil 韩国02 | 倍率:1.2
+      - Lil 韩国03 | 倍率:1.2
+      - Lil 韩国04 | 倍率:1.2
+      - Lil 韩国05 | 倍率:1.2
+      - Lil 香港01 | 倍率:1.8
+      - Lil 香港02 | 倍率:1.8
+      - Lil 香港03 | 倍率:1.6
+      - Lil 香港04 | 倍率:1.6
+      - Lil 香港05 | 倍率:1.5
+      - Lil 香港06 | 倍率:1.5
+      - Lil 香港07 | 倍率:1.5
+      - Lil 香港08 | 倍率:1.5
+      - Lil 香港09 | 倍率:1.6
+      - Lil 香港10 | 倍率:1.6
+      - Lil 香港11 | 倍率:2
+      - Lil 香港12
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 香港 | 遊戲專用 | 倍率:20
+      - Large 香港01 | 倍率:2
+      - Large 香港02 | 倍率:2
+      - Large 香港03 | 倍率:2
+      - Large 香港04 | 倍率:1.9
+      - Large 香港05 | 倍率:1.8
+      - Large 香港06 | 倍率:2
+      - Large 香港07 | 倍率:1.8
+      - Large 香港08 | 倍率:1.6
+      - Large 香港09 | 倍率:1.6
+      - Large 香港10 | 倍率:1.6
+      - Large 香港11 | 倍率:1.6
+      - Large 香港12 | 倍率:1.6
+      - Large 香港13 | 倍率:1.6
+      - Large 香港14 | 倍率:1.6
+      - Large 香港15 | 倍率:1.6
+      - Large 香港16 | 倍率:1.6
+      - Large 香港17 | 倍率:1.8
+      - Large 香港18 | 倍率:1.8
+      - Large 香港19 | 倍率:1.6
+      - Large 香港20 | 倍率:1.6
+      - Large 香港21 | 倍率:1.6
+      - Lil 香港01 | 倍率:1.8
+      - Lil 香港02 | 倍率:1.8
+      - Lil 香港03 | 倍率:1.6
+      - Lil 香港04 | 倍率:1.6
+      - Lil 香港05 | 倍率:1.5
+      - Lil 香港06 | 倍率:1.5
+      - Lil 香港07 | 倍率:1.5
+      - Lil 香港08 | 倍率:1.5
+      - Lil 香港09 | 倍率:1.6
+      - Lil 香港10 | 倍率:1.6
+      - Lil 香港11 | 倍率:2
+      - Lil 香港12
+  - name: 🇸🇬 新加坡节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Large 新加坡01 | 倍率:1.8
+      - Large 新加坡02 | 倍率:1.8
+      - Large 新加坡03
+      - Large 新加坡04 | 倍率:1.6
+      - Large 新加坡05 | 倍率:1.5
+      - Large 新加坡06 | 倍率:1.5
+      - Large 新加坡07 | 倍率:1.5
+      - Large 新加坡08 | 倍率:1.5
+      - Large 新加坡09 | 倍率:1.5
+      - Large 新加坡10 | 倍率:1.5
+      - Lil 新加坡01 | 倍率:1.5
+      - Lil 新加坡02 | 倍率:1.5
+      - Lil 新加坡03 | 倍率:1.5
+      - Lil 新加坡04 | 倍率:2
+      - Lil 新加坡05 | 倍率:2
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 台湾 | 遊戲專用 | 倍率:20
+      - Large 台湾01
+      - Large 台湾02
+      - Large 台湾03
+      - Large 台湾04
+      - Large 台湾05
+      - Large 台湾06
+      - Lil 台湾01 | 倍率:1.5
+      - Lil 台湾02 | 倍率:1.2
+      - Lil 台湾03 | 倍率:1.2
+      - Lil 台湾04 | 倍率:1.2
+      - Lil 台湾05 | 倍率:1.2
+      - Lil 台湾06 | 倍率:1.2
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Game 日本 | 遊戲專用 | 倍率:20
+      - Large 日本01 | 倍率:1.5
+      - Large 日本02 | 倍率:1.5
+      - Large 日本03 | 倍率:1.5
+      - Large 日本04 | 倍率:1.3
+      - Large 日本05 | 倍率:2
+      - Lil 日本01 | 倍率:1.5
+      - Lil 日本02 | 倍率:1.3
+      - Lil 日本03 | 倍率:1.3
+      - Lil 日本04 | 倍率:1.3
+      - Lil 日本05 | 倍率:1.3
+      - Lil 日本06 | 倍率:1.2
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - Large 韩国01 | 倍率:1.6
+      - Large 韩国02 | 倍率:1.6
+      - Lil 韩国01 | 倍率:1.5
+      - Lil 韩国02 | 倍率:1.2
+      - Lil 韩国03 | 倍率:1.2
+      - Lil 韩国04 | 倍率:1.2
+      - Lil 韩国05 | 倍率:1.2
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - Large 美国01 | 倍率:2
+      - Large 美国02 | 倍率:1.8
+      - Large 美国03 | 倍率:1.6
+      - Large 美国04 | 倍率:1.5
+      - Large 美国05 | 倍率:1.5
+      - Large 美国06 | 倍率:1.7
+      - Lil 美国01 | 倍率:2.1
+      - Lil 美国02 | 倍率:1.9
+      - Lil 美国03 | 倍率:1.5
+      - Lil 美国04 | 倍率:1.3
+      - Lil 美国05 | 倍率:1.3
+      - Lil 美国06 | 倍率:1.3
+      - Lil 美国07 | 倍率:1.3
+      - Lil 美国08 | 倍率:1.3
+      - Lil 美国09 | 倍率:1.3
+      - Lil 美国10 | 倍率:1.3
+rules:
+  - RULE-SET,LocalAreaNetwork_domain,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork_ipcidr,🎯 全球直连,no-resolve
+  - RULE-SET,UnBan_domain,🎯 全球直连
+  - DOMAIN-KEYWORD,admarvel,🛑 广告拦截
+  - DOMAIN-KEYWORD,admaster,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsage,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsensor,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsmogo,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsrvmedia,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsserving,🛑 广告拦截
+  - DOMAIN-KEYWORD,adsystem,🛑 广告拦截
+  - DOMAIN-KEYWORD,adwords,🛑 广告拦截
+  - DOMAIN-KEYWORD,applovin,🛑 广告拦截
+  - DOMAIN-KEYWORD,appsflyer,🛑 广告拦截
+  - DOMAIN-KEYWORD,domob,🛑 广告拦截
+  - DOMAIN-KEYWORD,duomeng,🛑 广告拦截
+  - DOMAIN-KEYWORD,dwtrack,🛑 广告拦截
+  - DOMAIN-KEYWORD,guanggao,🛑 广告拦截
+  - DOMAIN-KEYWORD,omgmta,🛑 广告拦截
+  - DOMAIN-KEYWORD,omniture,🛑 广告拦截
+  - DOMAIN-KEYWORD,openx,🛑 广告拦截
+  - DOMAIN-KEYWORD,partnerad,🛑 广告拦截
+  - DOMAIN-KEYWORD,pingfore,🛑 广告拦截
+  - DOMAIN-KEYWORD,socdm,🛑 广告拦截
+  - DOMAIN-KEYWORD,supersonicads,🛑 广告拦截
+  - DOMAIN-KEYWORD,wlmonitor,🛑 广告拦截
+  - DOMAIN-KEYWORD,zjtoolbar,🛑 广告拦截
+  - RULE-SET,BanAD_domain,🛑 广告拦截
+  - DOMAIN-KEYWORD,omgmtaw,🛑 广告拦截
+  - RULE-SET,BanProgramAD_domain,🛑 广告拦截
+  - RULE-SET,BanProgramAD_ipcidr,🛑 广告拦截,no-resolve
+  - DOMAIN-KEYWORD,1e100,🚀 节点选择
+  - DOMAIN-KEYWORD,abema,🚀 节点选择
+  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
+  - DOMAIN-KEYWORD,avtb,🚀 节点选择
+  - DOMAIN-KEYWORD,beetalk,🚀 节点选择
+  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
+  - DOMAIN-KEYWORD,dropbox,🚀 节点选择
+  - DOMAIN-KEYWORD,facebook,🚀 节点选择
+  - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
+  - DOMAIN-KEYWORD,github,🚀 节点选择
+  - DOMAIN-KEYWORD,gmail,🚀 节点选择
+  - DOMAIN-KEYWORD,google,🚀 节点选择
+  - DOMAIN-KEYWORD,instagram,🚀 节点选择
+  - DOMAIN-KEYWORD,porn,🚀 节点选择
+  - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
+  - DOMAIN-KEYWORD,spotify,🚀 节点选择
+  - DOMAIN-KEYWORD,telegram,🚀 节点选择
+  - DOMAIN-KEYWORD,twitter,🚀 节点选择
+  - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
+  - DOMAIN-KEYWORD,youtube,🚀 节点选择
+  - DOMAIN-KEYWORD,uk-live,🚀 节点选择
+  - DOMAIN-KEYWORD,1drv,🚀 节点选择
+  - DOMAIN-KEYWORD,onedrive,🚀 节点选择
+  - DOMAIN-KEYWORD,skydrive,🚀 节点选择
+  - DOMAIN-KEYWORD,porn,🚀 节点选择
+  - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
+  - RULE-SET,ProxyGFWlist_domain,🚀 节点选择
+  - RULE-SET,ProxyGFWlist_ipcidr,🚀 节点选择,no-resolve
+  - DOMAIN-KEYWORD,360buy,🎯 全球直连
+  - DOMAIN-KEYWORD,alicdn,🎯 全球直连
+  - DOMAIN-KEYWORD,alimama,🎯 全球直连
+  - DOMAIN-KEYWORD,alipay,🎯 全球直连
+  - DOMAIN-KEYWORD,appzapp,🎯 全球直连
+  - DOMAIN-KEYWORD,baidupcs,🎯 全球直连
+  - DOMAIN-KEYWORD,bilibili,🎯 全球直连
+  - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
+  - DOMAIN-KEYWORD,chinacache,🎯 全球直连
+  - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,jdpay,🎯 全球直连
+  - DOMAIN-KEYWORD,moke,🎯 全球直连
+  - DOMAIN-KEYWORD,qhimg,🎯 全球直连
+  - DOMAIN-KEYWORD,vpimg,🎯 全球直连
+  - DOMAIN-KEYWORD,xiami,🎯 全球直连
+  - DOMAIN-KEYWORD,xiaomi,🎯 全球直连
+  - RULE-SET,ChinaDomain_domain,🎯 全球直连
+  - RULE-SET,ChinaDomain_ipcidr,🎯 全球直连,no-resolve
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
+rule-providers:
+  LocalAreaNetwork_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9Mb2NhbEFyZWFOZXR3b3JrLmxpc3Q
+    path: ./providers/rule-provider_LocalAreaNetwork_domain.yaml
+    interval: 86400
+  LocalAreaNetwork_ipcidr:
+    type: http
+    behavior: ipcidr
+    url: http://sub.taumu.cn/getruleset?type=4&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9Mb2NhbEFyZWFOZXR3b3JrLmxpc3Q
+    path: ./providers/rule-provider_LocalAreaNetwork_ipcidr.yaml
+    interval: 86400
+  UnBan_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9VbkJhbi5saXN0
+    path: ./providers/rule-provider_UnBan_domain.yaml
+    interval: 86400
+  BanAD_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9CYW5BRC5saXN0
+    path: ./providers/rule-provider_BanAD_domain.yaml
+    interval: 86400
+  BanProgramAD_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9CYW5Qcm9ncmFtQUQubGlzdA
+    path: ./providers/rule-provider_BanProgramAD_domain.yaml
+    interval: 86400
+  BanProgramAD_ipcidr:
+    type: http
+    behavior: ipcidr
+    url: http://sub.taumu.cn/getruleset?type=4&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9CYW5Qcm9ncmFtQUQubGlzdA
+    path: ./providers/rule-provider_BanProgramAD_ipcidr.yaml
+    interval: 86400
+  ProxyGFWlist_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9Qcm94eUdGV2xpc3QubGlzdA
+    path: ./providers/rule-provider_ProxyGFWlist_domain.yaml
+    interval: 86400
+  ProxyGFWlist_ipcidr:
+    type: http
+    behavior: ipcidr
+    url: http://sub.taumu.cn/getruleset?type=4&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9Qcm94eUdGV2xpc3QubGlzdA
+    path: ./providers/rule-provider_ProxyGFWlist_ipcidr.yaml
+    interval: 86400
+  ChinaDomain_domain:
+    type: http
+    behavior: domain
+    url: http://sub.taumu.cn/getruleset?type=3&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9DaGluYURvbWFpbi5saXN0
+    path: ./providers/rule-provider_ChinaDomain_domain.yaml
+    interval: 86400
+  ChinaDomain_ipcidr:
+    type: http
+    behavior: ipcidr
+    url: http://sub.taumu.cn/getruleset?type=4&url=aHR0cDovL2NvbmZpZy50YXVtdS5jbi9DbGFzaC9DaGluYURvbWFpbi5saXN0
+    path: ./providers/rule-provider_ChinaDomain_ipcidr.yaml
+    interval: 86400

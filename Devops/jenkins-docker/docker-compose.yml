@@ -1,0 +1,17 @@
+services:
+  jenkins:
+    build: .
+    container_name: jenkins-docker
+    privileged: true # 让 Jenkins 容器具有足够的权限以运行 Docker 命令
+    user: root
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # 共享宿主机的 Docker 套接字
+      - ./jenkins-data:/var/jenkins_home # 持久化 Jenkins 数据
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock # 配置 Jenkins 使用宿主机的 Docker 守护进程
+      - JAVA_OPTS=-Duser.timezone=Asia/Shanghai
+      - TZ=Asia/Shanghai # 设置时区
+    ports:
+      - "8070:8080"
+      - "50000:50000" # Jenkins agent 通信端口
+    restart: always
