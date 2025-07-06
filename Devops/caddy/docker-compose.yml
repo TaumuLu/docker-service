@@ -1,14 +1,13 @@
 services:
   caddy:
-    image: caddy:latest
-    container_name: caddy
+    build: .
+    container_name: caddy-dnspod
     restart: always
     ports:
       - "80:80"
       - "443:443"
     environment:
       - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
-      # - DNSPOD_API_KEY=${DNSPOD_API_KEY}
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./data:/data
